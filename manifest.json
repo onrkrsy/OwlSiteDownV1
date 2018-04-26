@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+"name": "OWL Site Down",
+"version": "1.0",
+"icons": {"16": "owl.png", "48": "owl.png", "128": "owl.png"},
+"description": "Siteleriniz down olduğunda uyarmak içn hazırlanmış bir chrome eklentisidir.",
+"permissions": ["storage", "alarms", "notifications","http://*/","https://*/"],
+"options_page": "options.html",
+"browser_action": {
+               "default_icon": "owl.png",
+               "default_popup": "options.html"
+},
+ "background": { "scripts": ["jquery.min.js","background.js"] },
+  "web_accessible_resources": [
+    "owl.png"
+  ]
+}
